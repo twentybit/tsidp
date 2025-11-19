@@ -53,6 +53,10 @@ spec:
             - name: TSIDP_ENABLE_STS
               value: "1"
             {{- end }}
+            {{- if .Values.enable_funnel }}
+            - name: TSIDP_USE_FUNNEL
+              value: "1"
+            {{- end }}
             {{- if .Values.auth_key }}
             - name: TS_AUTHKEY
               valueFrom:

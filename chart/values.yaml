@@ -78,3 +78,6 @@ port: "443"
 
 # Enable OAuth token exchange using RFC 8693
 enable_sts: true
+
+# Use Tailscale Funnel to make tsidp available on the public internet so it works with SaaS products
+enable_funnel: false
